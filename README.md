@@ -12,7 +12,7 @@ Web效果如下图：
 见如下bilibili视频：  
 [功能演示](https://www.bilibili.com/video/BV1sy5fztEtK)  
 [壳体结构演示](https://www.bilibili.com/video/BV1NB5ezxE8d)  
-[本代码使用介绍](todo)  
+[本代码使用介绍](https://www.bilibili.com/video/BV1tx5XzjE9W)  
 
 # 本代码使用简介
 首先要下载并编译LicheeRV Nano官方系统：  
@@ -34,6 +34,7 @@ nginx配置文件
 重配置buildroot并编译nginx，nginx编译选项中要带有ngx_http_autoindex_module和ngx_upload_module两个模组  
 将autoindex_evilvir.xslt和nginx.conf放到系统的nginx配置目录（/etc/nginx)  
 建立web根目录：/var/www， 并在/var/www建立/v子目录用于存放录像生成的mp4文件。（/usr/html是nginx default site的root path，可将里面的文件从/usr/html拷贝到/var/www）  
+建立/var/www/mp3目录，存放上传的mp3文件   
 
 ### cam/src  
 这里包含录像机（recorder）的程序代码和Makefile。recorder程序使用MMF库实现。  
